@@ -117,11 +117,11 @@ local Window = WindUI:CreateWindow({
     Folder = "DYHUB Config | 99NitF | V3",
     Title = "DYHUB - 99 Night in the Forest @ In-game (Beta)",
     IconThemed = true,
-    Icon = "star",
+    Icon = "monitor",
     Author = "DYHUB (dsc.gg/dyhub)",
     Size = UDim2.fromOffset(720, 500),
     Transparent = true,
-    Theme = "Dark",
+    Theme = "Midnight",
 })
 
 Window:EditOpenButton({
@@ -1131,4 +1131,5 @@ RunService.RenderStepped:Connect(function()
     end
 end)
 Tabs.Misc:Toggle({Title="Show FPS", Default=true, Callback=function(val) showFPS=val; fpsText.Visible=val end})
+
 Tabs.Misc:Toggle({Title="Show Ping (ms)", Default=true, Callback=function(val) showPing=val; msText.Visible=val end})
